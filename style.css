@@ -8,12 +8,17 @@ body {
   padding: 0;
 }
 
-a, a:visited {
+a:visited {
+  color: #e0dddd;
+  text-decoration: underline
+}
+
+a {
   color: #e0dddd;
   text-decoration: underline
 }
 
 h1 {
   text-decoration: underline;
-  
+
 }
