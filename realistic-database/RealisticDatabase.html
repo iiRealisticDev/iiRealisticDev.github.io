@@ -83,7 +83,7 @@
   <body>
 
     <nav class="navbar" id="navbar">
-      <div class="navbar-heading" id="navbar-heading"><a href="index.html"><h2 class="navbar-heading-text">Home</h2></a></div><div class="search-box" id="search-box"><div class="search-box-input-container"><input class="search-box-input" type="text" placeholder="Search..." id="search-box-input" /><svg class="search-icon" alt="search-icon"><use xlink:href="#search-icon"></use></svg></div><div class="search-item-container" id="search-item-container"><ul class="search-item-ul" id="search-item-ul"></ul></div></div><div class="sidebar-main-content" id="sidebar-main-content"><div class="accordion collapsed" id="2291972" > <h3 class="accordion-heading">Classes<svg><use xlink:href="#down-icon"></use></svg></h3><ul class="accordion-content"><li class="accordion-list" id=""><a href="File.html">File</a></li><li class="accordion collapsed child" id=5319340><div class="accordion-heading child"><a href="RealisticDatabase.html">RealisticDatabase</a><svg><use xlink:href="#down-icon"></use></svg></div><ul class='methods accordion-content'><li data-type='method'><a href="RealisticDatabase.html#get">get</a></li><li data-type='method'><a href="RealisticDatabase.html#put">put</a></li><li data-type='method'><a href="RealisticDatabase.html#read">read</a></li><li data-type='method'><a href="RealisticDatabase.html#save">save</a></li></ul></li></ul> </div><div class="accordion collapsed" id="7769941" > <h3 class="accordion-heading">Global<svg><use xlink:href="#down-icon"></use></svg></h3><ul class="accordion-content"><li class="accordion-list" id=""><a href="global.html#makeDir">makeDir</a></li><li class="accordion-list" id=""><a href="global.html#readDB">readDB</a></li><li class="accordion-list" id=""><a href="global.html#validatorFunc">validatorFunc</a></li><li class="accordion-list" id=""><a href="global.html#writeDB">writeDB</a></li></ul> </div>
+      <div class="navbar-heading" id="navbar-heading"><a href="index.html"><h2 class="navbar-heading-text">Home</h2></a></div><div class="search-box" id="search-box"><div class="search-box-input-container"><input class="search-box-input" type="text" placeholder="Search..." id="search-box-input" /><svg class="search-icon" alt="search-icon"><use xlink:href="#search-icon"></use></svg></div><div class="search-item-container" id="search-item-container"><ul class="search-item-ul" id="search-item-ul"></ul></div></div><div class="sidebar-main-content" id="sidebar-main-content"><div class="accordion collapsed" id="4381805" > <h3 class="accordion-heading">Classes<svg><use xlink:href="#down-icon"></use></svg></h3><ul class="accordion-content"><li class="accordion-list" id=""><a href="DBFile.html">DBFile</a></li><li class="accordion collapsed child" id=9295588><div class="accordion-heading child"><a href="RealisticDatabase.html">RealisticDatabase</a><svg><use xlink:href="#down-icon"></use></svg></div><ul class='methods accordion-content'><li data-type='method'><a href="RealisticDatabase.html#get">get</a></li><li data-type='method'><a href="RealisticDatabase.html#put">put</a></li><li data-type='method'><a href="RealisticDatabase.html#read">read</a></li><li data-type='method'><a href="RealisticDatabase.html#remove">remove</a></li><li data-type='method'><a href="RealisticDatabase.html#save">save</a></li></ul></li></ul> </div><div class="accordion collapsed" id="665193" > <h3 class="accordion-heading">Global<svg><use xlink:href="#down-icon"></use></svg></h3><ul class="accordion-content"><li class="accordion-list" id=""><a href="global.html#makeDir">makeDir</a></li><li class="accordion-list" id=""><a href="global.html#readDB">readDB</a></li><li class="accordion-list" id=""><a href="global.html#validatorFunc">validatorFunc</a></li><li class="accordion-list" id=""><a href="global.html#writeDB">writeDB</a></li></ul> </div>
       
 
     </nav>
@@ -209,7 +209,7 @@
             <td class="type">
             
                 
-<span class="param-type"><a href="File.html">File</a></span>
+<span class="param-type"><a href="DBFile.html">DBFile</a></span>
 
 
             
@@ -820,6 +820,180 @@
 
     
 
+    <h4 class="name" id="remove">
+        <a href="#remove">#</a>
+        <span class="type-signature"></span>remove<span class="signature">(key, validator)</span><span class="type-signature"></span>
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>key</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>validator</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="global.html#validatorFunc">validatorFunc</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source"><ul class="dummy"><li>
+                <a href="database.js.html">database.js</a>, <a href="database.js.html#line84">line 84</a>
+            </li></ul></dd>
+        </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+<div class="param-desc">
+    <p>True if removed, false if not.</p>
+</div>
+
+
+
+            
+    </div>
+
+
+
+
+        
+            
+
+    
+
     <h4 class="name" id="save">
         <a href="#save">#</a>
         <span class="type-signature"></span>save<span class="signature">(newJson)</span><span class="type-signature"></span>
@@ -990,7 +1164,7 @@
       <script src="scripts/search.js"></script>
       <script src="scripts/third-party/fuse.js"></script>
       <script>
-        var list = [{"title":"File","link":"<a href=\"File.html\">File</a>"},{"title":"RealisticDatabase","link":"<a href=\"RealisticDatabase.html\">RealisticDatabase</a>"},{"title":"RealisticDatabase#get","link":"<a href=\"RealisticDatabase.html#get\">RealisticDatabase &rtrif; get</a>"},{"title":"RealisticDatabase#put","link":"<a href=\"RealisticDatabase.html#put\">RealisticDatabase &rtrif; put</a>"},{"title":"RealisticDatabase#read","link":"<a href=\"RealisticDatabase.html#read\">RealisticDatabase &rtrif; read</a>"},{"title":"RealisticDatabase#save","link":"<a href=\"RealisticDatabase.html#save\">RealisticDatabase &rtrif; save</a>"},{"title":"makeDir","link":"<a href=\"global.html#makeDir\">makeDir</a>"},{"title":"readDB","link":"<a href=\"global.html#readDB\">readDB</a>"},{"title":"validatorFunc","link":"<a href=\"global.html#validatorFunc\">validatorFunc</a>"},{"title":"writeDB","link":"<a href=\"global.html#writeDB\">writeDB</a>"}];
+        var list = [{"title":"DBFile","link":"<a href=\"DBFile.html\">DBFile</a>"},{"title":"RealisticDatabase","link":"<a href=\"RealisticDatabase.html\">RealisticDatabase</a>"},{"title":"RealisticDatabase#get","link":"<a href=\"RealisticDatabase.html#get\">RealisticDatabase &rtrif; get</a>"},{"title":"RealisticDatabase#put","link":"<a href=\"RealisticDatabase.html#put\">RealisticDatabase &rtrif; put</a>"},{"title":"RealisticDatabase#read","link":"<a href=\"RealisticDatabase.html#read\">RealisticDatabase &rtrif; read</a>"},{"title":"RealisticDatabase#remove","link":"<a href=\"RealisticDatabase.html#remove\">RealisticDatabase &rtrif; remove</a>"},{"title":"RealisticDatabase#save","link":"<a href=\"RealisticDatabase.html#save\">RealisticDatabase &rtrif; save</a>"},{"title":"makeDir","link":"<a href=\"global.html#makeDir\">makeDir</a>"},{"title":"readDB","link":"<a href=\"global.html#readDB\">readDB</a>"},{"title":"validatorFunc","link":"<a href=\"global.html#validatorFunc\">validatorFunc</a>"},{"title":"writeDB","link":"<a href=\"global.html#writeDB\">writeDB</a>"}];
         var options = 
           setupSearch(list, options)
       </script>
