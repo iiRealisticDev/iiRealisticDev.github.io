@@ -83,7 +83,7 @@
   <body>
 
     <nav class="navbar" id="navbar">
-      <div class="navbar-heading" id="navbar-heading"><a href="index.html"><h2 class="navbar-heading-text">Home</h2></a></div><div class="search-box" id="search-box"><div class="search-box-input-container"><input class="search-box-input" type="text" placeholder="Search..." id="search-box-input" /><svg class="search-icon" alt="search-icon"><use xlink:href="#search-icon"></use></svg></div><div class="search-item-container" id="search-item-container"><ul class="search-item-ul" id="search-item-ul"></ul></div></div><div class="sidebar-main-content" id="sidebar-main-content"><div class="accordion collapsed" id="4381805" > <h3 class="accordion-heading">Classes<svg><use xlink:href="#down-icon"></use></svg></h3><ul class="accordion-content"><li class="accordion-list" id=""><a href="DBFile.html">DBFile</a></li><li class="accordion collapsed child" id=9295588><div class="accordion-heading child"><a href="RealisticDatabase.html">RealisticDatabase</a><svg><use xlink:href="#down-icon"></use></svg></div><ul class='methods accordion-content'><li data-type='method'><a href="RealisticDatabase.html#get">get</a></li><li data-type='method'><a href="RealisticDatabase.html#put">put</a></li><li data-type='method'><a href="RealisticDatabase.html#read">read</a></li><li data-type='method'><a href="RealisticDatabase.html#remove">remove</a></li><li data-type='method'><a href="RealisticDatabase.html#save">save</a></li></ul></li></ul> </div><div class="accordion collapsed" id="665193" > <h3 class="accordion-heading">Global<svg><use xlink:href="#down-icon"></use></svg></h3><ul class="accordion-content"><li class="accordion-list" id=""><a href="global.html#makeDir">makeDir</a></li><li class="accordion-list" id=""><a href="global.html#readDB">readDB</a></li><li class="accordion-list" id=""><a href="global.html#validatorFunc">validatorFunc</a></li><li class="accordion-list" id=""><a href="global.html#writeDB">writeDB</a></li></ul> </div>
+      <div class="navbar-heading" id="navbar-heading"><a href="index.html"><h2 class="navbar-heading-text">Home</h2></a></div><div class="search-box" id="search-box"><div class="search-box-input-container"><input class="search-box-input" type="text" placeholder="Search..." id="search-box-input" /><svg class="search-icon" alt="search-icon"><use xlink:href="#search-icon"></use></svg></div><div class="search-item-container" id="search-item-container"><ul class="search-item-ul" id="search-item-ul"></ul></div></div><div class="sidebar-main-content" id="sidebar-main-content"><div class="accordion collapsed" id="3475801" > <h3 class="accordion-heading">Classes<svg><use xlink:href="#down-icon"></use></svg></h3><ul class="accordion-content"><li class="accordion-list" id=""><a href="DBFile.html">DBFile</a></li><li class="accordion collapsed child" id=9245372><div class="accordion-heading child"><a href="RealisticDatabase.html">RealisticDatabase</a><svg><use xlink:href="#down-icon"></use></svg></div><ul class='methods accordion-content'><li data-type='method'><a href="RealisticDatabase.html#get">get</a></li><li data-type='method'><a href="RealisticDatabase.html#put">put</a></li><li data-type='method'><a href="RealisticDatabase.html#read">read</a></li><li data-type='method'><a href="RealisticDatabase.html#remove">remove</a></li><li data-type='method'><a href="RealisticDatabase.html#save">save</a></li></ul></li></ul> </div><div class="accordion collapsed" id="6206845" > <h3 class="accordion-heading">Global<svg><use xlink:href="#down-icon"></use></svg></h3><ul class="accordion-content"><li class="accordion-list" id=""><a href="global.html#makeDir">makeDir</a></li><li class="accordion-list" id=""><a href="global.html#readDB">readDB</a></li><li class="accordion-list" id=""><a href="global.html#validatorFunc">validatorFunc</a></li><li class="accordion-list" id=""><a href="global.html#writeDB">writeDB</a></li></ul> </div>
       
 
     </nav>
@@ -145,6 +145,8 @@ class DBFile {
      * @description This can also just be a simple object of `{name: "", content: ""}`, however this was made for ease of use.
      * @param {string} name The name of the file.
      * @param {string} content The content of the file.
+     * @example
+     * const dbFile = new DBFile("db.json", "{}");
      */
     constructor(name, content) {
         var _a;
@@ -165,6 +167,8 @@ exports.DBFile = DBFile;
  * @param {string} dir The directory to create the file in.
  * @param {DBFile} file The file to create.
  * @param {boolean} [forceOverwrite=false] A boolean indicating whether to overwrite the database if it already exists. False by default.
+ * @example
+ * makeDir("./db", new DBFile("db.json", "{}"));
  */
 function makeDir(dir, file, forceOverwrite = false) {
     if (!fs_1.default.existsSync(`${dir}/${file.name}`) &amp;&amp; !forceOverwrite) {
@@ -180,6 +184,8 @@ exports.makeDir = makeDir;
  * @description Used internally in `RealisticDatabase.read`.
  * @param {string} dbPath The path to the database.
  * @returns {Record&lt;string,unknown[]>} The JSON Object in the DB.
+ * @example
+ * const db = readDB("./db/db.json");
  */
 function readDB(dbPath) {
     const file = fs_1.default.readFileSync(dbPath, { encoding: "utf8" });
@@ -192,6 +198,8 @@ exports.readDB = readDB;
  * @description Used in [RealisticDatabase.save](./RealisticDatabase.html#put) as a shorthand.
  * @param {string} dbPath The DB path
  * @param {Record&lt;string, unknown[]>} json The new JSON to write.
+ * @example
+ * const db = writeDB("./db/db.json", {a: "b", c: "d"});
  */
 function writeDB(dbPath, json) {
     fs_1.default.writeFileSync(dbPath, JSON.stringify(json));
