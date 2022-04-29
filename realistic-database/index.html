@@ -99,7 +99,7 @@
   <body>
 
     <nav class="navbar" id="navbar">
-      <div class="navbar-heading" id="navbar-heading"><a href="index.html"><h2 class="navbar-heading-text">Home</h2></a></div><div class="search-box" id="search-box"><div class="search-box-input-container"><input class="search-box-input" type="text" placeholder="Search..." id="search-box-input" /><svg class="search-icon" alt="search-icon"><use xlink:href="#search-icon"></use></svg></div><div class="search-item-container" id="search-item-container"><ul class="search-item-ul" id="search-item-ul"></ul></div></div><div class="sidebar-main-content" id="sidebar-main-content"><ul><li class="menu-li"><a href='https://github.com/iiRealisticDev/realistic-database' class=' menu-link' id='github' target=''>GitHub Repo</a></li></ul><div class="accordion collapsed" id="1057982" > <h3 class="accordion-heading">Classes<svg><use xlink:href="#down-icon"></use></svg></h3><ul class="accordion-content"><li class="accordion-list" id=""><a href="DBFile.html">DBFile</a></li><li class="accordion collapsed child" id=374535><div class="accordion-heading child"><a href="RealisticDatabase.html">RealisticDatabase</a><svg><use xlink:href="#down-icon"></use></svg></div><ul class='methods accordion-content'><li data-type='method'><a href="RealisticDatabase.html#get">get</a></li><li data-type='method'><a href="RealisticDatabase.html#put">put</a></li><li data-type='method'><a href="RealisticDatabase.html#read">read</a></li><li data-type='method'><a href="RealisticDatabase.html#remove">remove</a></li><li data-type='method'><a href="RealisticDatabase.html#save">save</a></li></ul></li></ul> </div><div class="accordion collapsed" id="9259892" > <h3 class="accordion-heading">Global<svg><use xlink:href="#down-icon"></use></svg></h3><ul class="accordion-content"><li class="accordion-list" id=""><a href="global.html#makeDir">makeDir</a></li><li class="accordion-list" id=""><a href="global.html#readDB">readDB</a></li><li class="accordion-list" id=""><a href="global.html#validatorFunc">validatorFunc</a></li><li class="accordion-list" id=""><a href="global.html#writeDB">writeDB</a></li></ul> </div>
+      <div class="navbar-heading" id="navbar-heading"><a href="index.html"><h2 class="navbar-heading-text">Home</h2></a></div><div class="search-box" id="search-box"><div class="search-box-input-container"><input class="search-box-input" type="text" placeholder="Search..." id="search-box-input" /><svg class="search-icon" alt="search-icon"><use xlink:href="#search-icon"></use></svg></div><div class="search-item-container" id="search-item-container"><ul class="search-item-ul" id="search-item-ul"></ul></div></div><div class="sidebar-main-content" id="sidebar-main-content"><ul><li class="menu-li"><a href='https://github.com/iiRealisticDev/realistic-database' class=' menu-link' id='github' target=''>GitHub Repo</a></li><li class="menu-li"><a href='https://www.npmjs.com/package/realistic-database' class=' menu-link' id='npm' target=''>NPM page</a></li></ul><div class="accordion collapsed" id="1462432" > <h3 class="accordion-heading">Classes<svg><use xlink:href="#down-icon"></use></svg></h3><ul class="accordion-content"><li class="accordion-list" id=""><a href="DBFile.html">DBFile</a></li><li class="accordion collapsed child" id=3547449><div class="accordion-heading child"><a href="RealisticDatabase.html">RealisticDatabase</a><svg><use xlink:href="#down-icon"></use></svg></div><ul class='methods accordion-content'><li data-type='method'><a href="RealisticDatabase.html#get">get</a></li><li data-type='method'><a href="RealisticDatabase.html#put">put</a></li><li data-type='method'><a href="RealisticDatabase.html#read">read</a></li><li data-type='method'><a href="RealisticDatabase.html#remove">remove</a></li><li data-type='method'><a href="RealisticDatabase.html#save">save</a></li></ul></li></ul> </div><div class="accordion collapsed" id="9777424" > <h3 class="accordion-heading">Global<svg><use xlink:href="#down-icon"></use></svg></h3><ul class="accordion-content"><li class="accordion-list" id=""><a href="global.html#makeDir">makeDir</a></li><li class="accordion-list" id=""><a href="global.html#readDB">readDB</a></li><li class="accordion-list" id=""><a href="global.html#validatorFunc">validatorFunc</a></li><li class="accordion-list" id=""><a href="global.html#writeDB">writeDB</a></li></ul> </div>
       
 
     </nav>
@@ -138,12 +138,7 @@
 <li>As of now, I did not add built-in encryption for data. I may add this in the future as an optional feature. Our current reason for doing this is because not everyone wants/needs encrypted data and encrypting it yourself is farily simple, and I'm yet to have time to add it.</li>
 </ul>
 <h2>Installation</h2>
-<p>If you are now finding this project as I made it public, you <strong>must</strong> install via the <code>.tgz</code> file. You can download the <code>.tgz</code> file from <a href="https://github.com/iiRealisticDev/realistic-database/blob/main/realistic-database-1.0.1.tgz">here</a> and install it into your project with:</p>
-<pre class="prettyprint source lang-shell"><code>npm i path/to/realistic-database-1.0.1.tgz
-</code></pre>
-<p>or you can install it from the raw version of the <code>.tgz</code> file on the repo, note that the <code>?raw=true</code> must be present, otherwise npm will not install it:</p>
-<pre class="prettyprint source lang-shell"><code>npm i https://github.com/iiRealisticDev/realistic-database/blob/main/realistic-database-1.0.1.tgz?raw=true
-</code></pre>
+<p><code>npm i realistic-database</code></p>
 <h2>Code Example</h2>
 <pre class="prettyprint source lang-typescript"><code>// Import the databse and DBFile class
 import { RealisticDatabase, DBFile } from &quot;realistic-database&quot;;
@@ -185,18 +180,25 @@ null
 <li>We use <a href="https://github.com/ankitskvmdam/clean-jsdoc-theme">clean-jsdoc-theme</a> to make the documentation look as nice as it does.</li>
 </ul>
 <h1>Changelogs</h1>
+<h2>Version 1.1.0</h2>
+<ul>
+<li>Added NPM page to menu</li>
+<li>Switched fron tarball install to <code>npm i realistic-database</code></li>
+</ul>
 <h2>Version 1.0.1</h2>
 <ul>
 <li>Changed behaviour of forceOverwrite for <code>put</code>, it previously checked if the key existed, not the value in the key. This was made before I decided to do keys as arrays of entries.</li>
 <li>Added <code>@example</code> fields to all JSDocs.</li>
 <li>Added <a href="https://github.com/iiRealisticDev/realistic-database">GitHub Repo</a> link.</li>
+<li>Added to NPM</li>
 </ul>
 <h2>Version 1.0.0</h2>
 <ul>
 <li>Release, everything on here is new. Read the <a href="https://iirealisticdev.github.io/realistic-database/index.html">documentation</a> for help.</li>
 </ul>
 <h2>Links</h2>
-<p><a href="https://github.com/iiRealisticDev/realistic-database">Source - GitHub</a></p></article>
+<p><a href="https://github.com/iiRealisticDev/realistic-database">Source - GitHub</a>
+<a href="https://www.npmjs.com/package/realistic-database">npm</a></p></article>
     </section>
 
 
